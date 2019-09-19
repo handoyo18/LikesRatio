@@ -9,7 +9,7 @@ def index():
     df = pd.read_csv("vids.csv", encoding='latin-1') #adding the data frame
 
     '''
-    You can prepocess your data here, for example you want to do the group_by or anything else
+    You can prepocess your data here, for example you want to do the group_by or anything else, and put the data frame you want to use at "table".
     "table" for creating the table, here I only select a couple variable that I want to show. 
     The output must be to html. Classes are costumization with bootstrap, see bootstrap4 guides for table for more info. 
     '''
@@ -25,7 +25,7 @@ def index():
 
 
 @app.route("/charts")
-# this fuction for rendering the plot
+# This fuction for rendering the plot
 def charts():
     import altair as alt #using altair library
 
@@ -33,13 +33,14 @@ def charts():
 
     chart = (
         alt.Chart(df)
-        .encode( # put the x and y
+        .encode( # Put the x and y
             x="likes", 
             y="dislikes",
             color=alt.Color("category_id", scale=alt.Scale(scheme='set2')), #color based on the category, you als can chose the color scheme
             tooltip=["likes", "dislikes"] 
         )
-        .mark_circle(size=60).interactive() # choose the plot type here
+        .mark_circle(size=60) # Choose the plot type here
+        .interactive() # To make the plot interactive 
     )
     return chart.to_json() 
 
