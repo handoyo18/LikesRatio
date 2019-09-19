@@ -8,7 +8,7 @@ This webapp is a simplified version of Samuel Chan's [Pricemate](https://github.
 
 Likesratio created to help new developers to make a simple reporting webapps from csv or sqlite source, while Sam's pricemate more focused to web scrapping. This webapp use youtube trending videos data from 2016.
 
-The web app shows a simple visualization (with tooltips) of the likes and dislikes of the YouTube video, which color coded by the video category.
+The web app shows a simple interactive visualization with tooltips of the likes and dislikes of the YouTube video, which color coded by the video category.
 
 ## Dependencies
 
