@@ -1,6 +1,8 @@
-# Likesratio
+# Inflation
 
 ## Description
+
+This version is the webscrapping version of likes ratio. Which continuation from [webscrapping module](https://github.com/t3981-h/Webscrapping-with-BeautifulSoup). Which try to scrap Indonesian inflation rate from www.bi.go.id , it's a official Indonesian bank that provide a couple useful financial information. Only using a couple default library from python and BeautifulSoup.
 
 ![](likesratio.PNG)
 
@@ -15,6 +17,7 @@ The web app shows a simple interactive visualization with tooltips of the likes 
 - Pandas
 - Flask
 - Altair
+- Beautifulsoup
 - Education-oriented
 
 ## Education-oriented
